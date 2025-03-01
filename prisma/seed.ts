@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-const { PrismaClient } = require("@prisma/client");
-
+import { PrismaClient } from "@prisma/client";
+require("dotenv").config();
 const prismaClient = new PrismaClient();
 
 const main = async () => {
@@ -10,7 +10,7 @@ const main = async () => {
     const restaurant = await tx.restaurant.create({
       data: {
         name: "FSW Donalds",
-        slug: "fsw-donalds",
+        slug: "fsw-donalds-anilJpa",
         description: "O melhor fast food do mundo",
         avatarImageUrl:
           "https://u9a6wmr3as.ufs.sh/f/jppBrbk0cChQvcNP9rHlEJu1vCY5kLqzjf29HKaeN78Z6pRy",
@@ -115,8 +115,13 @@ const main = async () => {
           name: "Big Mac",
           description:
             "Quatro hambúrgueres (100% carne bovina), alface americana, queijo fatiado sabor cheddar, molho especial, cebola, picles e pão com gergilim, acompanhamento e bebida.",
+          price: 39.9,
+          imageUrl:
+            "https://u9a6wmr3as.ufs.sh/f/jppBrbk0cChQKfI6fivqActTvBGLXfQe4a8CJ6d3HiR7USPK",
+          menuCategoryId: hamburguersCategory.id,
+          restaurantId: restaurant.id,
           ingredients: [
-            "Pão com gergilim",
+            "Pão com gergelim",
             "Hambúrguer de carne 100% bovina",
             "Alface americana",
             "Queijo fatiado sabor cheddar",
@@ -124,11 +129,6 @@ const main = async () => {
             "Cebola",
             "Picles",
           ],
-          price: 39.9,
-          imageUrl:
-            "https://u9a6wmr3as.ufs.sh/f/jppBrbk0cChQKfI6fivqActTvBGLXfQe4a8CJ6d3HiR7USPK",
-          menuCategoryId: hamburguersCategory.id,
-          restaurantId: restaurant.id,
         },
         {
           name: "Duplo Quarterão",
