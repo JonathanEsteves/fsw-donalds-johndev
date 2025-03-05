@@ -1,6 +1,7 @@
+import "./globals.css";
+
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import "./globals.css";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -8,8 +9,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Create Next App",
-  description: "Generate by create next app",
+  title: "FSW-DONALDS",
+  description: "Let's go finish this wonderfull project!",
 };
 
 export default function RootLayout({
