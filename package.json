@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@types/node": "^22.13.7",
+    "@types/node": "^22.13.10",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
@@ -37,6 +37,6 @@
     "prettier-plugin-tailwindcss": "0.6.5",
     "tailwindcss": "^3.4.1",
     "ts-node": "^10.9.2",
-    "typescript": "^5.7.3"
+    "typescript": "^5.8.2"
   }
 }

@@ -80,5 +80,4 @@ enum OrderStatus {
 enum ConsumptionMethod {
   TAKEAWAY
   DINE_IN
-  DRIVE_THRU
 }
